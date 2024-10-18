@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Síntomas</title>
+    <link rel="stylesheet" href="./Landing Page CSS/css/estilos.css">
+</head>
+<body>
+    <h1>Selecciona los síntomas</h1>
+    <form id="sintomasForm">
+        <label><input type="checkbox" name="sintomas" value="fiebre"> Fiebre</label><br>
+        <label><input type="checkbox" name="sintomas" value="tos"> Tos</label><br>
+        <label><input type="checkbox" name="sintomas" value="dolorCabeza"> Dolor de Cabeza</label><br>
+        <label><input type="checkbox" name="sintomas" value="fatiga"> Fatiga</label><br>
+        
+        <button type="submit">Continuar</button>
+    </form>
+
+    <script>
+        document.getElementById('sintomasForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            // Obtener síntomas seleccionados
+            const sintomasSeleccionados = Array.from(document.querySelectorAll('input[name="sintomas"]:checked'))
+                .map(checkbox => checkbox.value);
+            
+            // Guardar en el almacenamiento local o pasar a la siguiente página
+            localStorage.setItem('sintomas', JSON.stringify(sintomasSeleccionados));
+            
+            // Redirigir a la página de diagnóstico
+            window.location.href = 'diagnostico.html';
+        });
+    </script>
+</body>
+</html>

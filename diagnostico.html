@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diagnóstico</title>
+    <link rel="stylesheet" href="./Landing Page CSS/css/estilos.css">
+</head>
+<body>
+    <h1>Diagnóstico</h1>
+    <div id="diagnosticoContainer"></div>
+
+    <script>
+        // Obtener los síntomas seleccionados desde la página anterior
+        const sintomasSeleccionados = JSON.parse(localStorage.getItem('sintomas')) || [];
+
+        const diagnosticoContainer = document.getElementById('diagnosticoContainer');
+        
+        if (sintomasSeleccionados.length > 0) {
+            diagnosticoContainer.innerHTML = `<p>Con base en los síntomas seleccionados (${sintomasSeleccionados.join(', ')}), su diagnóstico preliminar es ...</p>`;
+        } else {
+            diagnosticoContainer.innerHTML = '<p>No se seleccionaron síntomas.</p>';
+        }
+    </script>
+</body>
+</html>
