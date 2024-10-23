@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba TT</title>
+    <link rel="stylesheet" href="./Landing Page CSS/css/normalize.css">
+    <link rel="stylesheet" href="./Landing Page CSS/css/estilos.css">
+    
+</head>
+<body>
+    <header class="registro-pacientes">
+        <nav class="nav container">
+            <a href="./index.html" class="nav">
+                <img src="./Landing Page CSS/images/inicio.svg" alt="icono inicio" width="50" height="50" >
+            </a>
+            <a href="#" class="nav">
+                <img src="./Landing Page CSS/images/menu.svg" alt="menu" width="50" height="50">
+            </a>
+            <a href="#" class="nav">
+                <img src="./Landing Page CSS/images/exit.svg" alt="menu" width="50" height="50">
+            </a>
+            <a class="navbar__title"><h1>Registro de paciente</h1></a>
+            <a href="#"> 
+                <img src="./Landing Page CSS/images/login.svg" alt="user" width="50" height="50">
+            </a>
+        </nav>
+    </header>
+
+    <div class="left_container">
+        <h1 class="titulos_container left">Datos Personales</h1>
+        <form>
+            <div style="margin-top: 10px;">
+                <label for="no_Folio" class="form_label">No. Folio: </label>
+                <input type="number" class="form_control" id="ID_folio">
+            </div>
+            <div style="margin-top: 10px;"> 
+                <label for="nombre" class="form_label">Nombre (s): </label>
+                <input type="text" class="form_control" id="ID_nombre">
+            </div>
+            <div style="margin-top: 10px;">
+                <label for="apellidos" class="form_label">Apellidos: </label>
+                <input type="text" class="form_control" id="ID_apellidos">
+            </div>
+            <div style="margin-top: 10px;">
+                <label for="fecha_nacimiento" class="form_label">Fecha de nacimiento: </label>
+                <input type="date" class="form_control" id="ID_fecha_nacimiento">
+            </div>            
+        </form>
+        <div style="margin-top: 10px;">
+            <label for="sexo" class="form_label">Sexo:</label>
+            <button class="sexo hombre">Hombre</button>
+            <button class="sexo mujer">Mujer</button>
+        </div>
+        
+
+        <!-- ? Código posible con radius
+        <input type="radio" class="btn-hombre" name="options" id="hombre" autocomplete="off" checked="">
+        <label class="form_label" for="hombre">Hombre</label>
+        <input type="radio" class="btn-mujer" name="options" id="mujer" autocomplete="off">
+        <label class="form_label" for="mujer">Mujer</label>
+        ?-->
+
+      </div>
+      
+      <div class="right_container">
+        <h1 class="titulos_container right">Datos de seguimiento</h1>
+        <form>
+            <div style="margin-top: 10px;">
+                <label for="no_telefono" class="form_label right">Teléfono: </label>
+                <input style="background-color: #3f5979;" type="number" class="form_control" id="ID_folio">
+            </div>
+            <div style="margin-top: 10px;"> 
+                <label for="nombre" class="form_label right">Dirección: </label>
+                <input style="background-color: #3f5979;" type="text" class="form_control" id="ID_nombre">
+            </div>
+        </form>
+      </div>
+      <div class="btn-group">
+        <button class="salir">Salir</button>
+        <button class="registrar" onclick="window.location.href='./sintomas.html'">Registrar Síntomas</button>
+        <button class="guardar">Guardar</button>
+      </div>
+</body>
+</html>

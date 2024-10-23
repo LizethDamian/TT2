@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,600;0,700;1,300;1,600;1,700&display=swap');
+
+:root{
+    --padding-container: 150px 0;
+    --color-title: #1a426c; 
+}
+
+body{    
+    font-family: "Poppins", sans-serif;
+    background-color: #f2f1ec;      
+}
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    background: #f2f1ec;
+    padding: var(--padding-container);
+
+}
+
+.navbar__title {
+    margin: 0;
+    flex-grow: 1;
+    text-align: center;
+    color: #3f5979;
+}
+
+.nav img {
+    margin: 0 10px;
+}
+
+.nav{
+    --padding-container:0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 16px;
+    margin-top: 10px;
+}
+
+.parent-container {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 100vh; /* Asegura que el contenedor ocupe toda la altura de la ventana */
+}
+
+.form_control{
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: #f5f5f5;
+    box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 1em;
+}
+.form_label{
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+.form_label.right{
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #f2f1ec;
+}
+.titulos_container.left {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #2b3f5d;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.titulos_container.right {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #f2f1ec;
+    margin-bottom: 20px;
+    text-align: center;
+}
+button.sexo {
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 16px;
+    font-size: 1em;
+    color: white;
+    cursor: pointer;
+}
+
+button.sexo.hombre {
+    background-color: #103b67;
+}
+
+button.sexo.mujer {
+    background-color: #8da9c4;
+}
+
+.left_container{
+    width: 47%;
+    background-color: #d5d5d8;
+    float: left;
+    border-radius: 16px;
+    margin: 30px 0px 30px 30px;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+.right_container{
+    width:47%;
+    background-color: #1a426c;
+    float: right;
+    border-radius: 16px;
+    margin: 30px 30px 30px 0px;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    border: none;
+    border-radius: 25px; /* Bordes redondeados */
+    padding: 10px 20px; /* Relleno dentro del botón */
+    font-size: 1em; /* Tamaño de fuente */
+    font-weight: bold; /* Fuente en negrita */
+    color: white; /* Color del texto */
+    cursor: pointer; /* Cambia el cursor a mano */
+    margin: 10px; /* Espacio entre los botones */
+}
+/* Botón de "Salir" */
+button.salir {
+    background-color: #f44336; /* Color rojo */
+}
+
+/* Botón de "Registrar Síntomas" */
+button.registrar {
+    background-color: #8da9c4; /* Color azul claro */
+}
+
+/* Botón de "Guardar" */
+button.guardar {
+    background-color: #3f5979; /* Color azul oscuro */
+}
+
+/* Efecto hover para todos los botones */
+button:hover {
+    opacity: 0.8; /* Ligera transparencia al pasar el cursor */
+}
+.btn-group{
+    position: absolute; /* O puedes usar `position: fixed` para que los botones se mantengan en la posición aunque se haga scroll */
+    bottom: 100px; /* Alinea los botones a 20px del fondo */
+    right: 100px; /* Alinea los botones a 20px del lado derecho */
+}
